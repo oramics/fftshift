@@ -4,18 +4,34 @@
 
 [![npm install fftshift](https://nodei.co/npm/fftshift.png?mini=true)](https://npmjs.org/package/fftshift/)
 
-**Example**  
 ```js
-var shift = require('fftshift')
-shift.fftshift(signal)
-shift.ifftshift(signal)
+import { fftshift, ifftshift } from 'fftshift'
+
+// given a signal (an array)
+fftshift(signal) // => in-place rotation. 0 is now at the center of the array
+ifftshift(signal) // => in-place rotation. Signal is now as before fftshift
 ```
+
+
+## Usage
+
+Install via `npm`:
+
+```bash
+npm install fftshift
+```
+
+Require in your code:
 
 **Example**  
 ```js
 // ES6 syntax
 import { fftshift, ifftshift } from 'fftshift'
-fftshift(signal)
+
+// ES5 syntax
+var shift = require('fftshift')
+shift.fftshift(signal)
+shift.ifftshift(signal)
 ```
 
 ## API
