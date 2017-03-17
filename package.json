@@ -1,0 +1,40 @@
+{
+  "name": "fftshift",
+  "description": "Cyclic rotation for phase-zero windowing",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "module": "index.js",
+  "scripts": {
+    "pretest": "rollup -f cjs -o build/index.js -- index.js",
+    "test": "jest test/*",
+    "docs": "jsdoc2md index.js > API.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oramics/fftshift/fftshift"
+  },
+  "keywords": [
+    "fftshift",
+    "dsp",
+    "window",
+    "windowing",
+    "fourier",
+    "fft",
+    "phase-zero",
+    "dsp-kit"
+  ],
+  "author": "danigb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oramics/fftshift/issues"
+  },
+  "homepage": "https://github.com/oramics/fftshift/fftshift/#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^19.0.2",
+    "rollup": "^0.41.6"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
