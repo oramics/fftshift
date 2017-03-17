@@ -1,7 +1,7 @@
 {
   "name": "fftshift",
   "description": "Cyclic rotation for phase-zero windowing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "build/index.js",
   "module": "index.js",
   "scripts": {
@@ -35,6 +35,7 @@
     "rollup": "^0.41.6"
   },
   "directories": {
-    "test": "test"
+    "test": "test",
+    "lib": "dist"
   }
 }
